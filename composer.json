@@ -1,0 +1,15 @@
+{
+  "name": "niels/example-app",
+  "description": "Example Application to test things",
+  "require": {
+    "pimple/pimple":"^v3"
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  },
+  "config": {
+    "platform": {}
+  }
+}
