@@ -6,15 +6,17 @@
     <table class="table">
         <thead>
             <tr>
-            <th>Name</th>
-            <th>Transport Method</th>
-            <th>Travel Distance</th>
-            <th>Workdays Per Week</th>
-        </tr>
+                <th>Employee Id</th>
+                <th>Name</th>
+                <th>Transport Method</th>
+                <th>Travel Distance</th>
+                <th>Workdays Per Week</th>
+            </tr>
         </thead>
         <tbody>
         {% for employee in employees %}
             <tr>
+                <td>{{ employee.id }}</td>
                 <td>{{ employee.name }}</td>
                 <td>{{ employee.transportMethod }}</td>
                 <td>{{ employee.travelDistance }}</td>

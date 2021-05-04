@@ -45,7 +45,7 @@ class FileHandler
             $employee->getName(),
             $employee->getTransportMethod(),
             $distance,
-            number_format($this->employeeHandler->getCompensationByEmployee($employee, $distance), 2),
+            number_format($this->employeeHandler->getCompensationByEmployee($employee, $distance), 2, '.', ''),
             $this->dateHandler->getFirstMondayOfNextMonth($month)->format('d-m-Y')
         );
     }
